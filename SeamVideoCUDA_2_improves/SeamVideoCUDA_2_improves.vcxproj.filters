@@ -14,4 +14,37 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\GetHomography.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\StitchAndSeam.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\ZbitVideoMergeAlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\kernel.cu">
+      <Filter>源文件</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\GetHomography.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\StitchAndSeam.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\ZbitVideoMergeAlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\kernel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

@@ -52,6 +52,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 9.0.props" />
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
@@ -63,6 +64,8 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="D:\Opencv2413_Debug_x64.props" />
+    <Import Project="D:\CUDA_X64.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -110,8 +113,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\GetHomography.cpp" />
+    <ClCompile Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\main.cpp" />
+    <ClCompile Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\StitchAndSeam.cpp" />
+    <ClCompile Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\ZbitVideoMergeAlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\kernel.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\GetHomography.h" />
+    <ClInclude Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\kernel.h" />
+    <ClInclude Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\StitchAndSeam.h" />
+    <ClInclude Include="..\..\..\..\..\Master%27s_thesis\Codes\12.24\SeamVideoCUDA_2_improves\SeamVideoCUDA_2_improves\ZbitVideoMergeAlg.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 9.0.targets" />
   </ImportGroup>
 </Project>
